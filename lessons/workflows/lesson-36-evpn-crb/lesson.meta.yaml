@@ -1,0 +1,44 @@
+---
+lessonName: Automating the Troubleshooting Chain
+lessonId: 36
+category: workflows
+lessondiagram: 
+tier: prod
+prereqs:
+  - 23  # Linux
+description: In this lesson, we will look into automating an EVPN/VXLAN fabric
+slug: What is this
+tags:
+- troubleshooting
+- tshoot
+
+blackboxes:
+
+devices:
+- name: spine
+  image: antidotelabs/vqfx-full:18.1R1.9
+- name: leaf1
+  image: antidotelabs/vqfx-full:18.1R1.9
+- name: leaf2
+  image: antidotelabs/vqfx-full:18.1R1.9
+  
+utilities:
+- name: linux1
+  image: antidotelabs/utility
+- name: linux2
+  image: antidotelabs/utility
+
+connections:
+- a: spine
+  b: leaf1
+- a: spine
+  b: leaf2
+- a: leaf1
+  b: linux1
+- a: leaf2
+  b: linux2
+
+
+stages:
+  - id: 1
+    description: Explore EVPN VXLAN fabric and configuration
