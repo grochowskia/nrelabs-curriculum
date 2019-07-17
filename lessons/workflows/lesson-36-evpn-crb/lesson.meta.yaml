@@ -12,21 +12,45 @@ tags:
 - troubleshooting
 - tshoot
 
-blackboxes:
 
-devices:
+endpoints:
 - name: spine
   image: antidotelabs/vqfx-full:18.1R1.9
+  presentations:
+          - name: cli
+            port: 22
+            type: ssh
+  additionalPorts: [830]
+
 - name: leaf1
   image: antidotelabs/vqfx-full:18.1R1.9
+  presentations:
+          - name: cli
+            port: 22
+            type: ssh
+  additionalPorts: [830]
+
 - name: leaf2
   image: antidotelabs/vqfx-full:18.1R1.9
+  presentations:
+          - name: cli
+            port: 22
+            type: ssh
+  additionalPorts: [830]
   
-utilities:
 - name: linux1
   image: antidotelabs/utility
+  presentations:
+          - name: cli
+            port: 22
+            type: ssh
+
 - name: linux2
   image: antidotelabs/utility
+  presentations:
+          - name: cli
+            port: 22
+            type: ssh
 
 connections:
 - a: spine
@@ -42,3 +66,4 @@ connections:
 stages:
   - id: 1
     description: Explore EVPN VXLAN fabric and configuration
+
