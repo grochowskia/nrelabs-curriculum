@@ -8,11 +8,10 @@
                 </root-authentication>
                 <login>
                     <user>
-                        <name>lab</name>
-                        <uid>2000</uid>
+                        <name>antidote</name>
                         <class>super-user</class>
                         <authentication>
-                            <encrypted-password>$6$2MCkIjnb$ByyPkD/qhg2cbNUFinVygHIKSMUTd7DeBtxay294RyMQeDlP0PsH2wzzK2/AeoyIpxVf4ayK.sB.HwM9nA.H//</encrypted-password>
+                        <encrypted-password>$1$iH4TNedH$3RKJbtDRO.N4Ua8B6LL/v/</encrypted-password>
                         </authentication>
                     </user>
                 </login>
