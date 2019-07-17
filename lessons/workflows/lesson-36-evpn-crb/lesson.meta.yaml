@@ -1,5 +1,5 @@
 ---
-lessonName: Automating the Troubleshooting Chain
+lessonName: Automating an EVPN-VXLAN Fabric
 lessonId: 36
 category: workflows
 lessondiagram: 
@@ -21,6 +21,7 @@ endpoints:
             port: 22
             type: ssh
   additionalPorts: [830]
+  configurationType: napalm-junos
 
 - name: leaf1
   image: antidotelabs/vqfx-full:18.1R1.9
@@ -29,6 +30,7 @@ endpoints:
             port: 22
             type: ssh
   additionalPorts: [830]
+  configurationType: napalm-junos
 
 - name: leaf2
   image: antidotelabs/vqfx-full:18.1R1.9
@@ -37,6 +39,7 @@ endpoints:
             port: 22
             type: ssh
   additionalPorts: [830]
+  configurationType: napalm-junos
   
 - name: linux1
   image: antidotelabs/utility
