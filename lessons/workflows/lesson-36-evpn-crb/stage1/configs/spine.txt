@@ -1,5 +1,4 @@
     <configuration>
-            <version>17.4R1.16</version>
             <system>
                 <host-name>spine</host-name>
                 <root-authentication>
@@ -343,7 +342,3 @@
                 </vlan>
             </vlans>
     </configuration>
-    <cli>
-        <banner>{master:0}</banner>
-    </cli>
-</configuration>

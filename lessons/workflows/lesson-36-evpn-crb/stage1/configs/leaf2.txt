@@ -287,7 +287,3 @@
                 </vlan>
             </vlans>
     </configuration>
-    <cli>
-        <banner>{master:0}</banner>
-    </cli>
-</configuration>
