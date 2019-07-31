@@ -1,5 +1,4 @@
     <configuration>
-            <version>17.4R1.16</version>
             <system>
                 <host-name>leaf2</host-name>
                 <root-authentication>
@@ -84,7 +83,7 @@
                         <family>
                             <inet>
                                 <address>
-                                    <name>172.16.1.9/31</name>
+                                    <name>172.16.1.3/31</name>
                                 </address>
                             </inet>
                         </family>
@@ -97,7 +96,7 @@
                         <family>
                             <inet>
                                 <address>
-                                    <name>172.16.1.3/31</name>
+                                    <name>172.16.1.9/31</name>
                                 </address>
                             </inet>
                         </family>
